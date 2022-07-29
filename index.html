@@ -3,13 +3,9 @@
 <head>
 <title>Welcome Back</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+<meta property="og:image" content="https://s3.memeshappen.com/memes/Welcome-back-Dude.jpg" />
 <style type="text/css">
-#image
-{
-width:auto;
-height:auto; 
-}
+
 
 </style>
 <script type="text/javascript">
@@ -26,7 +22,7 @@ var rand = Math.floor(Math.random()*4); //Generating a random number between 0 a
 var imgPath = "<img src='"+imageArray[rand]+"' alt='header' border='0' align='absmiddle' />";
 
 document.getElementById("image").innerHTML = imgPath;
-$('meta[property="og:image"]').attr('content', imgPath);
+//$('meta[property="og:image"]').attr('content', imgPath);
 var link = document.createElement('meta');  link.setAttribute('property', 'og:image');  link.content = imgPath;  document.getElementsByTagName('head')[0].appendChild(link);
 
 }
