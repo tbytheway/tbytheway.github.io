@@ -27,7 +27,7 @@ var imgPath = "<img src='"+imageArray[rand]+"' alt='header' border='0' align='ab
 
 document.getElementById("image").innerHTML = imgPath;
 document.getElementsByTagName('meta')["keywords"].content = "My new page keywords!!";
-document.getElementsByTagName('meta')[property="og:image"].content = imgPath;
+document.querySelectorAll('meta[property=og\\:image]')[0].setAttribute('content', imgPath)
 document.title = "My new Document Title!!";
 
 }
